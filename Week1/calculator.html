@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    /*assigning properties to the elements in the webpage*/
+    h2,h3{
+        text-align: center;
+    }
+    p{
+        margin-left: 610px;
+    }
+    #operation{
+        margin-left: 680px;
+        margin-block-end: 50px;
+    }
+         
+</style>
+<body>
+    <fieldset>
+        <legend style = "text-align: center;">
+            <h2>Calculator for 2 numbers</h2>
+        </legend>
+        <!--taking number input from user-->
+        <h3>Enter values</h3>
+        <p>
+            Number 1: 
+            <input type = "number" id="num1" >
+        </p>
+        
+        <p>
+            Number 2: 
+            <input type = "number" id="num2" >
+        </p>
+        <!--taking input for the operation to be done from user-->
+        <select id = "operation">
+            <option value= "+"> + </option>
+            <option value= "-"> - </option>
+            <option value= "x"> x </option>
+            <option value= "/"> / </option>
+            <option value= "^"> ^ </option>
+        </select>
+        <button onclick="calc();" id="but">Calculate</button>
+        <!--sending control to js code-->
+    </fieldset>
+    
+    <script>
+        //doing the necessary operations based on the user's choice
+        function calc()
+        {
+            var n1= parseFloat(document.getElementById('num1').value);//getting number 1
+            var n2= parseFloat(document.getElementById('num2').value);//getting number 2
+            var op= document.getElementById('operation').value;//getting operation type
+            var res;//used for result
+            if(op === '+')
+            {
+                res = n1+n2;
+                window.alert("Result is "+ res);
+            }
+            else if(op === '-')
+            {
+                res = n1-n2;
+                window.alert("Result is "+ res);
+            }
+            else if(op === 'x')
+            {
+                res = n1*n2;
+                window.alert("Result is "+ res);
+            }
+            else if(op === '/')
+            {
+                res = n1/n2;
+                window.alert("Result is "+ res);
+            }
+            else if(op === '^')
+            {
+                res = n1**n2;
+                window.alert("Result is "+ res);
+            }
+        }
+              
+    </script>
+</body>
+</html>
