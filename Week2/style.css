@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header, footer{
+    display: block;
+    color: whitesmoke;
+    position: absolute;
+    background-color:#3B16CB;
+    text-align: center;
+    line-height: 30%;
+    height: 60px;
+    width: 100%;
+    font-size: x-large;
+    font-family: sans-serif;
+    kerning: 1.5px;  
+}
+footer{
+    top: 133%;
+}
+
+/*designing the navigation bar*/
+ul{
+    margin-top: 50px;
+    margin-left: 39%;
+    padding: 0%;
+    list-style: none;
+}
+li{
+    float: left;
+    border-right: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    background-color: black;
+}
+a{
+    padding: 30px;
+    font-size: large;
+    color: whitesmoke;
+}
+a:hover{
+    background-color:rgb(255, 106, 0);
+}
+
+/*designing the heding*/
+.heading{
+    color: darkslategrey;
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 37%;
+    left: 34.5%;
+    font-size: 250%;
+}
+
+
+/*designing teh paragraphs*/
+p{
+    position: absolute;
+    padding-left: 5px;
+}
+.text1{
+    background-color: darkslategrey;
+    color:rgb(255, 106, 0);
+    top: 15%;
+    text-align: left;
+    padding-right: 170px;
+    padding-left: 10px;
+    height: 177px;
+    overflow: scroll;
+    font-size: medium;
+}
+.text2, .text3{
+    text-align: center;
+    font-size: larger;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.text2{
+    top: 48%;
+}
+.text3{
+    top: 80%;
+}
+
+/*designing images*/
+.image1{
+    position: absolute;
+    right: 25px;
+    top: 18%;
+    width: 150px;
+    height: 150px;
+}
+.image2{
+    position: absolute;
+    opacity: 50%;
+    top: 44%;
+    left: 11%;
+}
+
+
+/*designing the layout of contact us and sign up page*/
+.contact, .sign{
+    border-style: solid;
+    border-color: #3B16CB;
+    top: 15%;
+    left: 41%;
+    padding: 50px;
+    text-align: center;
+    font-size: medium;
+}
