@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*designing the heading and the buttons*/
+    button{
+        margin-left: 20%;
+        padding: 5px;
+    }
+    h2{
+        font-family: sans-serif;
+        text-align: center;
+    }
+</style>
+<body>
+    <h2><b><u>SORT AN ARRAY</u></b></h2>
+    <button onclick ="alpha();" >Alphabetically</button>
+    <button onclick ="asc();" >Ascending order</button>
+    <button onclick ="desc();" >Descending order</button>
+    <script>
+        var arr = [0]; var arr2 = [0]; var f=0;     //initialising variables
+        function enter(){                           //function to enter the variables
+            var s1 = window.prompt("Enter elements separated by space");
+            var s = s1.trim();
+            s = s + ' ';
+            w="";
+            for(var i=0; i<s.length; i++){
+                if(s.charAt(i) !=' '){
+                    w = w + s.charAt(i);
+                }
+                else{
+                    arr.push(parseInt(w));
+                    w="";
+                } 
+            }
+            arr.shift(0);
+            //window.alert(arr);
+        }
+        function alpha(){                           //function to sort alphabetically
+            enter();
+            window.alert("sorted array is "+arr.sort());
+            arr=[0];
+        }
+        function asc(){                             //function to sort in ascending order using bubble sort
+            enter();f++;                            //f is used for conting the no. of times a function is called 
+            var t=0;
+            for(var i=0; i<arr.length; i++){
+                for(var j=0; j<arr.length-1-i; j++){
+                    if(arr[j]>arr[j+1]){
+                        t=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=t;
+                    }
+                }
+            }
+            arr2=arr;
+            if(f==1){
+                window.alert("sorted array is "+arr);f=0;
+            }
+            arr=[0];
+        }
+        function desc(){                            //function to sort in descending order
+            f++;asc();
+            window.alert("sorted array is "+arr2.reverse());
+            arr2=[0];f=0;
+        }
+
+    </script>
+</body>
+</html>

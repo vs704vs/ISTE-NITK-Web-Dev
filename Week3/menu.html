@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    /*designing the heading*/  
+    h2{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        letter-spacing: 1.5px;
+        font-size: 200%;
+        color: whitesmoke;
+    }
+
+    /*designing the table*/
+    table{
+        width: 100%;
+    }
+    table,th,td{
+       border: 2px solid whitesmoke;
+       border-collapse: collapse;
+       color: rgb(221, 221, 221); 
+    }
+    th, .category{
+        padding: 5px;
+        text-align: center;
+        font-size: 300%;
+        font-family: 'Dancing Script', cursive;
+        color: whitesmoke;
+        
+    }
+    th{
+        font-size: 200%;
+    }
+
+
+    /*designing specific columns*/
+    .serial{
+        width: 50px;
+        
+    }
+    .image{
+        width: 150px;
+    }
+    .des{
+        width: 600px;
+        
+    }
+    .price{
+        width: 100px;
+        
+    }
+
+    /*designing the image*/
+    img{
+        width: 150px;
+        height: 100px;
+        margin-left: 4px;
+        margin-top: 3.5px;
+    }
+
+
+    /*designing the links*/
+    a{
+        color: yellowgreen;
+        text-decoration: none;
+    }
+    a:hover{
+        color:whitesmoke;
+    }
+    a:active{
+        color: lightblue;
+    }
+    .link{
+        font-size: large;
+        padding-left: 270px;
+        padding-bottom: 30px;
+    }
+
+    /*designing the content is each cell of the table*/
+    #sn, #pr, #d, #food{
+        color: rgb(221, 221, 221); 
+    }
+    #sn, #pr{
+        text-align: center;
+        font-size: large;
+        font-family: 'Pacifico', cursive;
+    }
+    
+    #food{
+        font-size: 200%;
+        font-family: 'Dancing Script', cursive;
+        padding-left: 100px;
+    }
+    #d{
+        font-size: 120%;
+        padding-left: 10px;
+        font-family: 'Pacifico', cursive;
+    }
+</style>
+<body background="http://exclusivelocalmarketing.com/wp-content/uploads/2015/03/Black-Background-Wood-01-1050x1680.jpg">
+    
+    <h2><b><u>MENU</u></b></h2>
+    <table>
+        <!--1st row-->
+        <tr>
+            <th class="serial">S no.</th>
+            <th class="name">Name</th>
+            <th class="image">Preview</th>
+            <th class="des">Description</th>
+            <th class="price">Price</th>
+        </tr>
+        <!--2nd row-->
+        <tr>
+            <td id="sn">I</td>
+            <td colspan="5" class="category">Chinese</td>
+        </tr>
+        <!--3rd row-->
+        <tr>
+            <td id="sn">1.</td>
+            <td id="food">Dim Sums</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2015-10/dimsum_625x350_51446202982.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2015-10/dimsum_625x350_51446202982.jpg">
+                </a>
+            </td>
+            <td id="d">One of the most loves street food from the north east, widely popular across northern India now comes to your kitchen! Small bite-sized rounds stuffed with veggies or meat. Dimsums are perfect steamed snack to delight those evening cravings.</td>
+            <td id="pr">300.00</td>
+        </tr>
+        <!--4th row-->
+        <tr>
+            <td id="sn">2.</td>
+            <td id="food">Szechwan Chilli Chicken</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2015-02/chilli-chicken_625x350_81424323578.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2015-02/chilli-chicken_625x350_81424323578.jpg">
+                </a>
+            </td>
+            <td id="d">A fiery delight straight from the Sichuan region. It is loaded with pungent spices like brown pepper. red chillies, ginger, green chillies and white pepper.</td>
+            <td id="pr">350.00</td>
+        </tr>
+        <!--5th row-->
+        <tr>
+            <td id="sn">3.</td>
+            <td id="food">Spring Roll</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2015-02/spring-roll_625x350_51424323845.jpg">
+                    <img src="https://i.ndtvimg.com/i/2015-02/spring-roll_625x350_51424323845.jpg">
+                </a>
+            </td>
+            <td id="d">A crisp appetizer where shredded veggies are encased in thin sheets and then fried golden. Little munchies to prepare at home for a high tea menu or just a party starter, serve with a tangy dip.</td>
+            <td id="pr">180.00</td>
+        </tr>
+
+
+        <!--6th row-->
+        <tr>
+            <td id="sn">II</td>
+            <td colspan="5" class="category">Indian</td>
+        </tr>
+        <!--7th row-->
+        <tr>
+            <td id="sn">1.</td>
+            <td id="food">Chettinad Fish Fry</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2015-06/indian-dinner_625x350_41434360207.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2015-06/indian-dinner_625x350_41434360207.jpg">
+                </a>
+            </td>
+            <td id="d">Get your daily dose of perfect protein. Pieces of surmai fish marinated in garlic, cumin, fennel, curry leaves and tomatoes are pan-fried in refined oil and served hot. This fish fry recipe has a host of delectable spices used for marination giving it a unique touch.</td>
+            <td id="pr">320.00</td>
+        </tr>
+        <!--8th row-->
+        <tr>
+            <td id="sn">2.</td>
+            <td id="food">Dum Aloo Lakhwani</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2015-06/indian-dinner_625x350_51434362664.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2015-06/indian-dinner_625x350_51434362664.jpg">
+                </a>
+            </td>
+            <td id="d">Your family will thank you for this absolutely fantastic bowl of dum aloo cooked Lakhnawi style. Take some potatoes, crumbled paneer, kasuri methi, butter, onions and some ghee.</td>
+            <td id="pr">240.00</td>
+        </tr>
+        <!--9th row-->
+        <tr>
+            <td id="sn">3.</td>
+            <td id="food">Makhmali Kofte</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2017-10/makhmali-kofte_620x350_51508918483.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2017-10/makhmali-kofte_620x350_51508918483.jpg">
+                </a>
+            </td>
+            <td id="d">A rich gravy made of khus khus, coconut and milk that tastes best with koftas made from khoya. This velvety and creamy recipe will leave you licking your fingers. Makhmali kofte can be your go-to dish for dinner parties as this is quite different from other kofta recipes and extremely delicious.</td>
+            <td id="pr">280.00</td>
+        </tr>
+
+        <!--10th row-->
+        <tr>
+            <td id="sn">III</td>
+            <td colspan="5" class="category">Thai</td>
+        </tr>
+        <!--11th row-->
+        <tr>
+            <td id="sn">1.</td>
+            <td id="food">Chicken Satay</td>
+            <td>
+                <a href="https://i.ndtvimg.com/i/2016-03/chicken-satay-625_625x350_71459233967.jpg" target="_blank">
+                    <img src="https://i.ndtvimg.com/i/2016-03/chicken-satay-625_625x350_71459233967.jpg">
+                </a>
+            </td>
+            <td id="d">A classic and downright delicious Thai appetiser, served with a chunky peanut sauce. This delicious delight is sure to be loved by kids and adults alike. If you happen to be a chicken lover, then this is sure going to be paradise for you.</td>
+            <td id="pr">330.00</td>
+        </tr>
+        <!--12th row-->
+        <tr>
+            <td id="sn">2.</td>
+            <td id="food">Thai Green Chicken Curry</td>
+            <td>
+                <a href="https://c.ndtvimg.com/2018-11/ieb2n7p8_thai-green-curry_625x300_23_November_18.PNG" target="_blank">
+                    <img src="https://c.ndtvimg.com/2018-11/ieb2n7p8_thai-green-curry_625x300_23_November_18.PNG">
+                </a>
+            </td>
+            <td id="d">Chicken cooked in coconut milk with onions, lime leaves, basil leaves and an aromatic Thai green curry paste. If you have a thing for coconut, then this Thai green curry is sure to tantalise your taste buds. </td>
+            <td id="pr">370.00</td>
+        </tr>
+        <!--13th row-->
+        <tr>
+            <td id="sn">3.</td>
+            <td id="food">Thai Pomelo Salad</td>
+            <td>
+                <a href="https://c.ndtvimg.com/2018-11/di2bu1ro_thai_625x300_23_November_18.PNG" target="_blank">
+                    <img src="https://c.ndtvimg.com/2018-11/di2bu1ro_thai_625x300_23_November_18.PNG">
+                </a>
+            </td>
+            <td id="d">The tomatoes and scallions balance the sourness of the fruit and the peanuts sprinkled on top adds a layer of crunch in the salad. You can add a bit of your favourite dressing too in the salad.</td>
+            <td id="pr">290.00</td>
+        </tr>
+    </table>
+    <br>
+    <a href="https://food.ndtv.com/lists/10-most-popular-chinese-dishes-740725" target="_blank" class="link">More Chinese dishes</a>
+    <a href="https://food.ndtv.com/recipes/indian-recipes" target="_blank" class="link">More Indian dishes</a>
+    <a href="https://food.ndtv.com/lists/10-best-traditional-thai-food-recipes-1734589" target="_blank" class="link">More Thai dishes</a>
+</body>
+</html>
